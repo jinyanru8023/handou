@@ -1,0 +1,149 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,hr,ul,ol,td,input,option,textarea {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "微软雅黑";
+    background: #f4f4f4;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  img {
+    border: none;
+  }
+  .head{
+    width: 100%;
+    height: 100px;
+    .nav{
+      width:1200px ;
+      height: 100px;
+      
+      margin: 0 auto;
+   
+      .log{
+        width:300px ;
+        height: 80px;
+        margin-top: 10px;
+        float: left;
+        .logo{
+          width:300px ;
+          height: 80px;
+        }
+      }
+      .nav1{
+        float: left;
+        width:700px ;
+        height:80px ;
+        position: absolute;
+        right: 100px;
+        ul{
+        width:700px ;
+        height:80px ;
+        line-height: 80px;
+        li{
+          width:126px ;
+          height:80px ;
+          text-align: center;
+          float: left;
+          // .fsh:hover { 
+          //   color: crimson;
+          
+          // } 
+
+          .drop{
+            width:126px ;
+            height:272px ;
+            z-index: 1000;
+            display: none;
+           position: absolute;
+           background: white;
+            .drop1{
+              display: block;
+              width: 126px;
+              height:66px ;
+              line-height: 66px;
+            }
+          }
+        }
+        
+        }
+      }
+    }
+  }
+//轮播图
+
+.container {
+  width: 100%;
+  height: 632px;
+  z-index: 999;
+  position: relative;
+}
+
+ul {
+  li {
+    a {
+      display: block;
+    }
+  }
+}
+img {
+  width: 100%;
+  height: 632px;
+}
+ol {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+ 
+  padding: 3px;
+  z-index: 2;
+  li {
+    background: red;
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-right: 7px;
+  }
+}
+span {
+  width: 30px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 40px;
+  color: white;
+  background: rgba(255,255,255,.3);
+  cursor: pointer;
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transition: all 1s ease 0s;
+  &:hover {
+    -webkit-transform: rotateY(40deg) translateX(-3px) scale(1.2);
+  }
+}
+#rtBtn {
+  right: 0;
+  left: auto;
+}
+//ban
+.ban{
+  width: 100%;
+  height: 604px;
+  .banner{
+    width: 1200px;
+    height: 604px;
+    margin: 0 100px;
+  }
+}
